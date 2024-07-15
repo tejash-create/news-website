@@ -1,13 +1,14 @@
-function App() {
-  return (
-    <div className="App">
-      <header>
-        <p>
-          This is the first app
-        </p>
-      </header>
-    </div>
-  );
-}
+import React, {Component} from "react";
+import Navbar from "./components/Navbar";
+import News from "./components/News";
 
-export default App;
+export default class App extends Component {
+  render() {
+    return (
+      <div >
+        <Navbar/>
+        <News/>
+      </div>
+    );
+  }
+}
